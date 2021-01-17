@@ -1,0 +1,97 @@
+.container {
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin-top: 150px;
+    margin-right: 57px
+}
+
+body {
+    background-color: #222222;
+    font-family: Montserrat;
+}
+
+#label1 {
+    font-size: 35px;
+    color: #F2F2F2;
+    font-weight: bold;
+}
+
+.in {
+    font-size: 18px;
+    font-family: Montserrat;
+    background-color: #373737;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    padding-left: 15px;
+    color: aliceblue;
+}
+
+#label2 {
+    font-size: 18px;
+    color: #F2F2F2;
+}
+
+.btn {
+    background-color: #6AC045;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    color: aliceblue;
+    border-style: hidden;
+    font-weight: bold;
+    font-size: 18px;
+
+
+}
+
+.link1 {
+    color: #7667B9;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 3px;
+}
+
+/*placholder{
+    color: #494949;
+}*/
+
+
+
+::placeholder {
+    color: #494949;
+    opacity: 1;
+    font-size: 17px;
+    font-family: Montserrat;
+
+
+}
+
+.centered {
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 180px
+}
+
+.centered2 {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.invalid {
+    display: none;
+    margin-top: -5px;
+    color: red;
+    margin-left: 11px;
+}
+#signInBtn {
+    cursor: pointer;
+}

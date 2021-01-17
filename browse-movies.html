@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Browse Movies</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/browse_movies.css">
+    </head>
+    <body>
+        <!-- Start Search Section -->
+        <div id="SearchSection">
+            <div class="nav">
+                <h2 id="logo">NETFLEX</h2>
+                <ul class="ulNav">
+                    <li id="logoutLi"><a href="../" style="text-decoration:none"> Logout</a></li>
+                    <li id="loginRegisterPart" style="margin-top: 0;">
+                        <ul style="list-style: none;">
+                            <li><a style="font-weight: bolder;" href="login.html" class="colorFont">Login</a></li>
+                            <li style="margin-top: 20px;" class="colorFont">&nbsp;|&nbsp; </li>
+                            <li><a style="font-weight: bolder;" href="Regestration.html" class="colorFont">Register</a></li>
+                        </ul>
+                    </li>
+                    <li id="ml"></li>
+                    <li><a  href="/TrendingMovie.html">Trending Movies</a></li>
+                    <li><a  href="/TrendingTv.html">Trending Tvs</a></li>
+                    <li><a id="browsePage" href="browse-movies.html">Browse</a></li>
+                    <li><a  href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div id="searchComponent">
+                    <h3>Search Term:</h3>
+                    <div id="serachBox">
+                        <input type="text" id="searchInp">
+                        <input type="button" id="searchBtn" value="Search">
+                    </div>
+                    <ul id="searchOptions">
+                        <li>
+                            <label>Type:</label>
+                            <select name="type" id="typeInp">
+                                <option selected disabled>Select Type</option>
+                                <option value="movie">Movies</option>
+                                <option value="tv">TV</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Year:</label>
+                            <select name="year" id="yearInp">
+                                <option selected disabled>Select Year</option>
+                                <option value="all">All</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Search Section -->
+        <!-- Start Listing Section -->
+        
+        <!-- Start Loading -->
+        <!-- <section id="loading1">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+        </section> -->
+        <!-- End Loading -->
+        <div id="listingSection" class="listingSection">
+            <div class="container">
+                <h3><span id="totalNumMovies"></span> YIFY Movies found</h3>
+                <div id="pagination">
+                    <ul>
+                        <li>
+                            <input type="button" id="firstBtn" class="hidden" value="« First">
+                        </li>
+                        <li>
+                            <input type="button" id="prevBtn" class="hidden" value="« Previous">
+                        </li>
+                        <li class="active">
+                            <input type="button" value="1">
+                        </li>
+                        <li id="paginitionBtn">
+                            <input type="button" value="2">
+                        </li>
+                        <li>
+                            <input type="button" value="3">
+                        </li>
+                        <li>
+                            <input type="button" value="4">
+                        </li>
+                        <li>
+                            <input type="button" value="5">
+                        </li>
+                        <li>
+                            <input type="button" value="6">
+                        </li>
+                        <li>
+                            <input type="button" value="7">
+                        </li>
+                        <li>
+                            <input type="button" value="8">
+                        </li>
+                        <li>
+                            <input type="button" disabled style="cursor: not-allowed;" value="...">
+                        </li>
+                        <li>
+                            <input type="button" value="999">
+                        </li>
+                        <li>
+                            <input type="button" value="1000">
+                        </li>
+                        <li>
+                            <input type="button" id="nextBtn" value="Next »">
+                        </li>
+                        <li>
+                            <input type="button" id="lastBtn" value="Last »">
+                        </li>
+                    </ul>
+                </div>
+                <div id="moviesListing">
+                    <table>
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="pagination">
+                    <ul>
+                        <li class="active">
+                            <input type="button" value="1">
+                        </li>
+                        <li>
+                            <input type="button" value="2">
+                        </li>
+                        <li>
+                            <input type="button" value="3">
+                        </li>
+                        <li>
+                            <input type="button" value="4">
+                        </li>
+                        <li>
+                            <input type="button" value="5">
+                        </li>
+                        <li>
+                            <input type="button" value="7">
+                        </li>
+                        <li>
+                            <input type="button" value="8">
+                        </li>
+                        <li>
+                            <input type="button" value="...">
+                        </li>
+                        <li>
+                            <input type="button" value="1250">
+                        </li>
+                        <li>
+                            <input type="button" value="1251">
+                        </li>
+                        <li>
+                            <input type="button" value="Next >>">
+                        </li>
+                        <li>
+                            <input type="button" value="Last >>">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="text-align: center; font-weight: bold;">
+            <p >
+                <span class="colorFont"><span style="color: #4CAF50;">NETFLEX</span> &#169; 2011 - 2021   </span>
+                <a href="">Blog</a>
+                <span class="colorFont"> - </span> <a href="">Contact</a> - </span> 
+                <a href="" id="toggleLogInOutBtn"></a> </p>
+            <p><span class="colorFont">By using this site you agree to and accept our </span><a href="">User Agreement</a><span class="colorFont"> ,which can be read</span> <a href="">here</a></p>
+        </div>
+        <!-- End Listing Section -->
+        
+        <!-- Start Scroll To Top button -->
+        <a href="#" class="back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+        <!-- End Scroll To Top button -->
+        <script src="./js/all.min.js"></script>
+        <script src="./js/cookie.js"></script>
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/movie-class.js"></script>
+        <script src="./js/browse-movies.js"></script>
+    </body>
+</html>

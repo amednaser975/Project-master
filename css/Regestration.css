@@ -1,0 +1,120 @@
+
+body {
+    background-color: #222222;
+    font-family: Montserrat;
+}
+.container {
+    float: right;
+    width: 500px;
+    height: 450px;
+    margin-top: 40px;
+    margin-right: 80px;
+}
+
+
+#label1 {
+    font-family: Montserrat;
+    font-size: 30px;
+    color: #F2F2F2;
+    font-weight: bold;
+}
+
+.in {
+    font-size: 18px;
+    background-color: #373737 !important;
+    width: 355px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    padding-left: 15px;
+    color: aliceblue;
+    font-family: Montserrat;
+}
+
+#label2 {
+    font-size: 18px;
+    color: #F2F2F2;
+}
+#label3 {
+    font-size: 13px;
+    color: #F2F2F2;
+}
+
+.btn {
+    font-family: Montserrat;
+    background-color: #6AC045;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    color: aliceblue;
+    border-style: hidden;
+    font-weight: bold;
+    font-size: 18px;
+
+
+}
+
+.link1{
+    color: #7667B9;
+    font-weight: 200px;
+    text-decoration: none;
+    font-size: 19;
+}
+
+.link2{
+    color: #7667B9;
+    font-weight: 200px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/*placholder{
+    color: #494949;
+}*/
+
+
+
+::placeholder {
+    color: #494949;
+    opacity: 1;
+    font-size: 17px;
+    font-family: Montserrat;
+
+
+}
+
+.centered {
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 180px
+}
+
+.centered2 {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    color: aliceblue;
+    font-weight: bold;
+}
+#l
+{
+    font-size: 13px;
+    width: 150px
+}
+#fnameInp, #lnameInp, #phoneInp, #emailInp, #passwordInp, #confirmInp {
+    border: 1px solid transparent;
+}
+#submitBtn {
+    cursor: not-allowed;
+}
+.reguired {
+    color: red;
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 14px;
+    visibility: hidden;
+}

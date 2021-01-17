@@ -1,0 +1,211 @@
+.prf{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #2f2f2f;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+.username
+{
+    color: #4CAF50;
+
+}
+.cent
+{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+table
+{
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+/* img
+{
+   width: 200px;
+   height: 315px;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+
+} */
+.container
+{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.container a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+li input
+{
+    border-radius: 10px;
+    border: none;
+    border: solid #333333 1px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+/* .nav
+{
+    width: 100%;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.ulNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+  
+.ulNav li {
+    float: right;
+    margin-top: 6px;
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+  
+.ulNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:black ;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  } */
+.settCont
+{
+    margin-left: 200px;
+}
+#chan
+{
+    border: none;
+    color: white;
+    padding: 12px 11px;
+    background-color: #4CAF50;
+}
+.del
+{
+    border: none;
+    color: white;
+    padding: 12px 14px;
+    background-color: #4CAF50; 
+}
+#avatar 
+{
+    float: left;
+}
+.changePassContianer {
+    margin-top: 6rem;
+    float: left;
+}
+#userImg {
+    float: right;
+    margin-right: 10rem;
+    margin-top: 4rem;
+}
+#userImg  img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+/* Start NavBar */
+
+.nav
+{
+    width: 100%;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 1rem 0;
+    /* position: fixed; */
+    z-index: 99999999;
+}
+#logo {
+    display: inline;
+    margin-left: 3rem;
+    color: #4CAF50;
+}
+.ulNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    background-color: black;
+    /* width: 100%; */
+    /* height: 60px; */
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+  
+.ulNav li {
+    float: right;
+    margin-top: 6px;
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+.ulNav li:hover a {
+    color: #4CAF50 !important;
+}
+.activePage {
+    color: #4CAF50 !important;
+}
+.ulNav li a {
+    display: block;
+    color: #919191;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    background-color:black ;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease-in-out;
+  }
+/* End NavBar */
+#saveBtn {
+    position: absolute;
+    bottom: 14%;
+    left: 40%;
+}
+#saveBtn input {
+    padding: 1rem 3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#imgLi {
+
+    margin-bottom: 10px;
+}
+#imgOfUser {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 6px;
+    left: 10px;
+}

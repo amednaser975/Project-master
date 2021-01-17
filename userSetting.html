@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <!--link rel="stylesheet" type="text/css" href="css/userSetting.css" /-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/userSettings.css">
+
+</head>
+
+<body class="prf">
+    
+    <div class="nav">
+        <h2 id="logo">NETFLEX</h2>
+        <ul class="ulNav">
+            <li id="logoutLi"><a href="../" style="text-decoration:none"> Logout</a></li>
+            <li><a href="../" style="text-decoration:none" id="userName"></a></li>
+            <li id="imgLi"><img id="imgOfUser" src=""></li>
+            <li><a  id="moviePage" href="/TrendingMovie.html">Trending Movies</a></li>
+            <li><a  href="/TrendingTv.html">Trending Tvs</a></li>
+            <li><a  href="browse-movies.html">Browse</a></li>
+            <li><a  href="index.html">Home</a></li>
+        </ul>
+    </div>
+
+
+  <div class="settCont">
+       <!--h1  id="float-left">Avatar</h1-->
+    <div class="changePassContianer">
+
+        <h3 class="username" id="change">Change Password</h3>
+    <label id="label1">New Password:</label><br>
+    <input type="password" id="txt1"><br><br>
+
+    <label id="label1">Confirm Password:</label><br>
+    <input type="password" id="txt2">
+    <br>
+    <br>
+    <input type="button" id="chan" value="Change">
+    <h3 style="color: red;" id="warn" ></h3>
+    <br>
+    <br>
+
+        <!-- <img  id="ava" src="" alt="avatar"> -->
+        <input type="button" id="float-btn1" class="del" value="Delete My Account">
+<br>
+<br>
+    </div>  
+    <div id="userImg">
+        <img src="./images/default_avatar.jpg" alt="avatar" id="avatar"><br>
+        <label  id="label2">Upload Avater</label><br><br>
+        <input type="file" id="fileUpload" accept="image/*" onchange="loadFile(event);">
+    </div>
+     </div>
+
+     <!-- <div id="saveBtn">
+
+         <input type="button" id="saveBtn" class="del" value="Save">
+         <br>
+    </div> -->
+
+
+
+    <script src="js/cookie.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/loadImg.js"></script>
+    <script src="js/userSettings.js"></script>
+</body>
+
+</html>

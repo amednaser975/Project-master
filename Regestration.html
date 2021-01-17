@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Regestration</title>
+    <link rel="stylesheet" href="./css/Regestration.css">
+    </head>
+
+    <body>
+        <img src="Logo-YTS.svg" class="centered">
+        <p class="centered2">Download YTS YIFY movies: HD smallest size</p>
+        <img src="up-movieimg.png">
+        <div class="container">
+            <form method="post" id="form1">
+                <label id="label1">Register Now it's Free!</label><br><br>
+                <input type="text" pattern="/^[A-Za-z]{3,}$/" name="fname" id="fnameInp" placeholder="First Name" class="in">
+                <p id="fNameReq" class="reguired">First Name is Not Valid</p>
+                <input type="text" name="lname" id="lnameInp" placeholder="Last Name" class="in">
+                <p id="lNameReq" class="reguired">Last Name is Not Valid</p>
+                <input type="text" name="phone" id="phoneInp" placeholder="Phone " class="in">
+                <p id="phoneReq" class="reguired">Phone Number is Not Valid</p>
+                <input type="email" name="email" id="emailInp" placeholder="Email" class="in">
+                <p id="emailReq" class="reguired">Email is Not Valid</p>
+                <input type="password" name="pass" id="passwordInp" placeholder="password" class="in">
+                <p id="passwordReq" class="reguired">Password is Not Valid</p>
+                <input type="password" name="confirm" id="confirmInp" placeholder="Confirm password" class="in">
+                <p id="confirmReq" class="reguired">Confirm Password is Not Valid</p>
+                <label id="label2">arleady have account?</label>
+                <a href="login.html" class="link1"> Login. </a><br>
+
+                <label id="label3">By clicking Register you agree to</label>
+                <span id="l"> <a href="reset.html" class="link2"> our terms and conditions </a> <br><br></span>
+                <input type="button" id="submitBtn" value="Register" class="btn">
+
+            </form>
+        </div>
+        <script src="./js/all.min.js"></script>
+        <script src="./js/cookie.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="./js/regestration.js"></script>
+    </body>
+</html>
